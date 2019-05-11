@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>GOBus</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="header-container">
+    <div class="container">
+
+        <div class="login-container pull-right ">
+            <img src="img/account.png" alt=""/>
+            <a href="#">Login | Sign Up</a>
+            <span class="pull-right phone">+977-014315636</span>
+            <div  class="telephone-img pull-right ">
+                <img src="img/telephone.png"/>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="header clearfix">
+
+
+            <nav>
+                <ul class="nav nav-pills pull-right nav-items">
+                    <li role=""><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Routes</a></li>
+                    <li role="presentation"><a href="#">About Us</a></li>
+                    <li role="presentation"><a href="#">Help</a></li>
+                </ul>
+            </nav>
+
+            <img src="img/logo.png" alt="gobus"/>
+        </div>
+    </div>
+</div>
+
+<div class="container" >
+
+    <div class="payment-container">
+        <div class="count-down">
+            <p>Please complete your booking within next <span class="count-down-timer">09:58</span> minutes</p>
+            <a href="">Change Bus</a>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-9">
+
+                <div class="contact-info">
+                    <div class="one">
+                        <div class="outer">
+                            <div class="inner inner-active">
+                                <span>1</span>
+                            </div>
+                        </div>
+                        <a href="" class="edit-this">Edit</a>
+                    </div>
+                    <h3>Contact Details</h3>
+
+                   <div class="contact-info-sub">
+                       <p><input type="text" id="email" placeholder="Email"/></p>
+                        <span class="booking-email-info">Your booking details will be sent to this email address</span>
+                        <p><input type="text" id="phone" class="contact-info-phone" placeholder="Phone Number"/></p>
+                        <a href="" class="continue">Continue</a>
+                   </div>
+                </div>
+
+                <div class="pessenger-info">
+                    <div class="two">
+                        <div class="outer">
+                            <div class="inner">
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <!--<a href="" class="edit-this">Edit</a>-->
+                    </div>
+                    <h3>Traveller Details</h3>
+                    <div class="passenger-row-0">
+                        <table width=""  cellspacing="0" cellpadding="0">
+
+                                <tr class="table-header">
+                                    <td class="pessenger-serial-no">S.No</td>
+                                    <td class="passenger-fullname">Full Name</td>
+                                    <td class="passenger-gender">Gender</td>
+                                    <td class="passenger-age">Age</td>
+                                    <td class="passenger-seat-no">Seat No.</td>
+                                </tr>
+
+                        </table>
+                    </div>
+
+
+                    <div class="passenger-row-1">
+                        <table width=""  cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td class="pessenger-serial-no">1</td>
+                                <td class="passenger-fullname"><input type="text" placeholder="Full Name"/></td>
+                                <td class="passenger-gender">
+                                    <select name="">
+                                        <option value="">--</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </td>
+                                <td class="passenger-age"><input type="text"  maxlength="2"/></td>
+                                <td class="passenger-seat-no">A11</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="passenger-row-2">
+                        <table width=""  cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td class="pessenger-serial-no">2</td>
+                                <td class="passenger-fullname"><input type="text" placeholder="Full Name"/></td>
+                                <td class="passenger-gender">
+                                    <select name="">
+                                        <option value="">--</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </td>
+                                <td class="passenger-age"><input type="text" maxlength="2"/></td>
+                                <td class="passenger-seat-no">A12</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="passenger-row-3">
+                        <table width=""  cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td class="pessenger-serial-no">3</td>
+                                <td class="passenger-fullname"><input type="text" placeholder="Full Name"/></td>
+                                <td class="passenger-gender">
+                                    <select name="">
+                                        <option value="">--</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </td>
+                                <td class="passenger-age"><input type="text" maxlength="2"/></td>
+                                <td class="passenger-seat-no">A13</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="passenger-row-4">
+                        <table width=""  cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td class="pessenger-serial-no">4</td>
+                                <td class="passenger-fullname"><input type="text" placeholder="Full Name"/></td>
+                                <td class="passenger-gender">
+                                    <select name="">
+                                        <option value="">--</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </td>
+                                <td class="passenger-age"><input type="text" maxlength="2"/></td>
+                                <td class="passenger-seat-no">A14</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a href="" class="continue">Continue</a>
+
+
+                </div>
+
+                <div class="payment-info">
+                    <div class="three">
+                        <div class="outer">
+                            <div class="inner">
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <!--<a href="" class="edit-this">Edit</a>-->
+                    </div>
+                    <h3>Payment Mode</h3>
+
+                    <div class="payment-options">
+                        <ul class=" tab-list" role="tablist">
+                            <li role="presentation" class="active first-tab"><a href="#credit-card" aria-controls="credit-card" role="tab" data-toggle="tab">Credit Card</a></li>
+                            <li role="presentation"><a href="#net-banking" aria-controls="net-banking" role="tab" data-toggle="tab">Net Banking</a></li>
+                            <li role="presentation"><a href="#e-sewa" aria-controls="e-sewa" role="tab" data-toggle="tab">E Sewa</a></li>
+                            <li role="presentation"><a href="#paypal" aria-controls="paypal" role="tab" data-toggle="tab">Paypal</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="credit-card">
+
+                                <p class="tab-pane-heading">Payable Amount: Nrs 4000</p>
+
+                                <ul>
+                                    <li><label for="name-on-card">Name on Card: </label><input type="text" id="name-on-card" placeholder="Name on card"/></li>
+                                    <li><label for="credit-card-no">Credit Card Number: </label><input type="text" id="credit-card-no" placeholder="Credit Card Number"/></li>
+                                    <li><label></label><img src="img/visa.png" alt=""/><img src="img/master-card.png"><img
+                                            src="img/dclub-card.png" alt=""/><img src="img/am-express.png" alt=""/></li>
+                                    <li><label for="expiry-date">Expiry Date: </label><select name="" id="expiry-date">
+                                            <option value="">Months</option>
+                                        </select>
+
+                                        <select name="">
+                                            <option value="">Year</option>
+                                        </select>
+                                    </li>
+                                    <li><label for="credit-card-cvv">CVV: </label><input type="text" id="credit-card-cvv"  maxlength="3" placeholder="CVV"/><img
+                                            src="img/cvv.png" alt=""/><span>3 digit CVV Number</span></li>
+                                </ul>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="net-banking"><p class="tab-pane-heading comming-soon">Net Banking Coming Soon...</p></div>
+                            <div role="tabpanel" class="tab-pane" id="e-sewa"><p class="tab-pane-heading comming-soon">E-Sewa Coming Soon...</p></div>
+                            <div role="tabpanel" class="tab-pane" id="paypal"><p class="tab-pane-heading comming-soon">Paypal Coming Soon...</p></div>
+                        </div>
+
+                    </div>
+
+                    <div class="secured-by">
+                        <img src="img/visa-secured.png" alt=""/>
+                        <img src="img/visa-verified.png" alt=""/>
+                        <img src="img/master-secured.png" alt=""/>
+                        <img src="img/am-express-secured.png" alt=""/>
+                        <img src="img/pci.png" alt=""/>
+                    </div>
+                    <p class="terms-aggrement">By clicking the Pay Now button, I agree with the <a href="">Cancellation Policy</a> and
+                        <a href="">Terms & Conditions</a></p>
+
+                    <div class="pay-now-div"><a href="" class="pay-now">Pay Now</a></div>
+                </div>
+
+
+
+            </div>
+
+            <div class="col-xs-3">
+
+                <div class="journey-info">
+                    <h3>Booking Summary</h3>
+
+                    <div class="jour-info">
+                        <p class="info-title">Onward Journey</p>
+
+                        <div class="sub-jour-info">
+                            <p>Rainbow Travels</p>
+                            <p class="sub-info">Multi-Axle Tata, 4x4 Seater</p>
+                        </div>
+
+                        <div class="sub-jour-info">
+                            <p>Kathmandu To Pokhara</p>
+                            <p class="sub-info">On August 18th 2015</p>
+                            <p class="sub-info"><span class="depature-time">07:00am</span>     <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>     <span class="arrival-time">02:00pm</span></p>
+                        </div>
+
+                        <div class="sub-jour-info">
+                            <p>No. of Seat(s)</p>
+                            <p class="sub-info">4</p>
+                        </div>
+
+                        <div class="sub-jour-info">
+                            <p>Pickup Point</p>
+                            <p class="sub-info">Kalanki Chowk</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="total-pay-info">
+                    <h3>Fare Details</h3>
+
+                    <p class="info-title">Onward Fare: Nrs. 4000</p>
+                    <div class="you-pay">
+                        <p>You Pay</p>
+                        <p class="total-fare">Nrs 4000</p>
+                    </div>
+                    <p class="secure-transaction-info"><img src="img/secured-key.png" alt=""/>Transactions on this site are safe
+                        and secure</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<div class="footer-container">
+    <div class="container">
+        <footer class="footer">
+            <div class="row">
+                <div class="col-xs-3 footer-widget">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="">Bus Booking</a></li>
+                        <li><a href="">Cancel Bus Ticket</a></li>
+                        <li><a href="">Refund Status</a></li>
+                        <li><a href="">Print/Sms Ticket</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-3 footer-widget">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-3  footer-widget">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="">Cancellation</a></li>
+                        <li><a href="">Refund</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-xs-3 footer-widget">
+                    <h4>Find Us On</h4>
+                    <ul>
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">twitter</a></li>
+
+                    </ul>
+                </div>
+            </div><!-- end-row -->
+
+            <div class="popular-route footer-widget">
+                <div class="row">
+                    <div class="col-xs-9">
+                        <h4>Popular Routes</h4>
+                        <p><a href="">Kathmandu - Pokhara</a>	| <a href="">Kathmandu - Chitwan</a>  | <a
+                                href="">Kathmanudu - Lumbini</a> | <a href="">Pokhara - Palpa</a> |
+                            <a href="">Pokhara - Chitwan </a>| <a href="">Kahtmandu - Biratnagar </a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div> <!-- /container -->
+    <div class="copyright-info">
+        <div class="container">
+            <p>&copy; gobus All Rights Reserved</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/transition.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $("[id^=Travel-]").each(function() {
+            $(this).hide();
+        });
+
+
+        $( "[id^=btn-seats-]" ).click(function() {
+
+
+            $(this).html($(this).text() == "View Seats" ? "Hide Seats" : "View Seats");
+
+
+            $(this).toggleClass("btn-seats-visited btn-seats");
+            var id  = $(this).attr("id");
+            var idLen = id.length;
+
+            var Id = id.substr(10, idLen);
+            var travelID = "#Travel-"+Id;
+
+            $(travelID).fadeToggle( "slow", "linear" );
+        });
+
+
+        $('.deck a').on('click', function(e) {
+
+            var className = $(this).attr("class");
+
+            if (className != 'booked') {
+                $(this).toggleClass("selected"); //you can list several class names
+
+            }
+
+
+            /*
+             if (className == 'reserved-ladies') {
+             $(this).toggleClass("selected");
+
+
+             }*/
+
+
+            e.preventDefault();
+        });
+
+        $('.deck a').mouseleave(function(){
+            $(this).tooltip('hide');
+        });
+
+       /* $(window).scroll(function(){
+
+        });*/
+
+
+    });
+</script>
+
+</body>
+</html>

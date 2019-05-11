@@ -1,0 +1,1820 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>GOBus</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="header-container">
+    <div class="container">
+
+        <div class="login-container pull-right ">
+            <img src="img/account.png" alt=""/>
+            <a href="#">Login | Sign Up</a>
+            <span class="pull-right phone">+977-014315636</span>
+            <div  class="telephone-img pull-right ">
+                <img src="img/telephone.png"/>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="header clearfix">
+
+
+            <nav>
+                <ul class="nav nav-pills pull-right nav-items">
+                    <li role=""><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Routes</a></li>
+                    <li role="presentation"><a href="#">About Us</a></li>
+                    <li role="presentation"><a href="#">Help</a></li>
+                </ul>
+            </nav>
+
+            <img src="img/logo.png" alt="gobus"/>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="searchInfo">
+        <div class="container">
+            <p class="NoOfResultsInfo"><span>125</span> Buses are going from KTM to PKR</p>
+             <a href=""class="prev-day"> < Prev Day</a> <span>Tue, 18 Aug </span> <a href="" class="next-day">Next Day ></a>
+        </div>
+    </div>
+
+
+    <div class="modifyMain">
+        <div class="container">
+            <form action="" class="modify-form">
+                <input type="text" placeholder="Leaving From" value="Kathmandu" />
+                <input type="text" placeholder="Going To"  value="Pokhara"/>
+                <input type="text" placeholder="Date of Journey" class="hasDatePicker" value="18-08-2015"/>
+                <input type="text" placeholder="Date of Return" class=" hasDatePicker"/>
+                <input type="submit" value="Search Buses"/>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="filterBar">
+        <div class="container">
+            <div class="filter filterBy">Filter By:</div>
+            <div class="filter Travel">
+                <a class="filterBtn" href=""><img src="" alt=""/><span>Travels</span></a>
+            </div>
+            <div class="filter BusType">
+                <a class="filterBtn" href=""><img src="" alt=""/><span>BusType</span></a>
+            </div>
+            <div class="filter Amenities">
+                <a class="filterBtn" href=""><img src="" alt=""/><span>Amenities</span></a>
+            </div>
+            <div class="filter Time">
+                <a class="filterBtn" href=""><img src="" alt=""/><span>Time</span></a>
+            </div>
+            <div class="filter Rating">
+                <a class="filterBtn" href=""><img src="" alt=""/><span>Rating</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sortBar">
+        <div class="container">
+            <div class="sort operator col-xs-3">
+                <a href="">Operator</a>
+            </div>
+            <div class="sort time col-xs-3">
+                <a href="">Time</a>
+            </div>
+            <div class="sort seats col-xs-3">
+                <a href="">Seats</a>
+            </div>
+            <div class="sort price col-xs-3">
+                <a href="">Price</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="results">
+        <div class="container">
+
+            <div class="item">
+
+                <div class="item-info1">
+                    <div class="row item-row">
+                        <div class="col-xs-3 item-section">
+                            <p class="item-name">Rainbow Travels</p>
+                            <p class="item-detail">Multi-Axle Tata, A/C, 4x4 Seater</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section">
+                            <p class="item-time .item-center"><span>11:00 AM</span><span class="glyphicon  glyphicon-arrow-right arrow-icon" aria-hidden="true"></span><span>4:00 PM</span></p>
+                            <p class="item-detail time-duration .item-center">(Duration:  4 Hrs)</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section ">
+                            <p class="item-seats .item-center">24 Seats</p>
+                            <p class="item-detail item-seat-available .item-center">(Available:  12 seats)</p>
+                        </div>
+
+                        <div class=" col-xs-3 item-section price-section">
+                            <p class="item-price">Nrs. 1000</p><a class="btn-seats" id="btn-seats-01" data-toggle="collapse" href="#travel-1" aria-expanded="true" aria-controls="travel-1">View Seats</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="item-view-seats collapse " id="travel-1">
+                    <div class="row item-row" id="Travel-01">
+                        <div class="col-xs-8 bus-structure ">
+                            <p>Click on seat to select/deselect seat</p>
+                            <div class="bus-outer-frame">
+
+
+                                <div class="deck">
+                                    <div style="position: absolute; top:20px; left: 35px;">
+                                        <p class="front">FRONT</p>
+                                        <p class="rear">BACK</p>
+                                        <img src="img/steering.png" alt=""/>
+                                    </div>
+
+
+                                    <!-- Row 1-->
+                                    <div style="position: absolute; top:10px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A1" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 174px; ">
+                                        <a href="" title="Seat: A7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 204px;">
+                                        <a href="" title="Seat: A9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 234px;">
+                                        <a href="" title="Seat: A11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 264px;">
+                                        <a href="" title="Seat: A13" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 294px;">
+                                        <a href="" title="Seat: A15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 324px;">
+                                        <a href="" title="Seat: A17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 354px;">
+                                        <a href="" title="Seat: A19" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 384px;">
+                                        <a href="" title="Seat: A21" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 414px;">
+                                        <a href="" title="Seat: A23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <!-- Row 2 -->
+
+                                    <div style="position: absolute; top:44px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A2" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A4" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 174px;">
+                                        <a href="" title=" Seat: A8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 204px;">
+                                        <a href="" title=" Seat: A10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 234px;">
+                                        <a href="" title="Seat: A12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 264px;">
+                                        <a href="" title="Seat: A14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 294px;">
+                                        <a href="" title="Seat: A16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 324px;">
+                                        <a href="" title="Seat: A18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 354px;">
+                                        <a href="" title="Seat: A20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 384px;">
+                                        <a href="" title="Seat: A22" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 414px;">
+                                        <a href="" title="Seat: A24" data-toggle="tooltip"></a>
+                                    </div>
+
+                                     <!-- Row 3-->
+
+                                    <div style="position: absolute; top:74px; left: 414px;">
+                                        <a href="" title="Seat: A25" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <!-- Row 4-->
+
+                                    <div style="position: absolute; top:104px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B2 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B4 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 144px;">
+                                        <a href="" title="Seat: B6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 174px;">
+                                        <a href="" title="Seat: B8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 204px;">
+                                        <a href="" title="Seat: B10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 234px;">
+                                        <a href="" title="Seat: B12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 264px;">
+                                        <a href="" title="Seat: B14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 294px;">
+                                        <a href="" title="Seat: B16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 324px;">
+                                        <a href="" title="Seat: B18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 354px;">
+                                        <a href="" title="Seat: B20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 384px;">
+                                        <a href="" title="Seat: B22" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 414px;">
+                                        <a href="" title="Seat: B24" data-toggle="tooltip"></a>
+                                    </div>
+
+
+
+                                    <!-- Row 5-->
+
+                                    <div style="position: absolute; top:134px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B1 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B3 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 144px;">
+                                        <a href="" title="Seat: B5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 174px;">
+                                        <a href="" title="Seat: B7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 204px;">
+                                        <a href="" title="Seat: B9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 234px;">
+                                        <a href="" title="Seat: B11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 264px;">
+                                        <a href="" title="Seat: B3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 294px;">
+                                        <a href="" title="Seat: B15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 324px;">
+                                        <a href="" title="Seat: B17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 354px;">
+                                        <a href="" class="booked" title="Seat: B19 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 384px;">
+                                        <a href="" class="booked" title="Seat: B21 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 414px;">
+                                        <a href="" title="Seat: B23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="legend">
+                                <label for=""><span class="seat booked"></span>Booked Seat</label>
+
+                                <label for=""><span class="seat selected"></span>Selected Seat</label>
+
+                                <label for=""><span class="seat reserved-ladies"></span>Reserved for Ladies </label>
+
+                                <label for=""><span class="seat available"></span>Available Seat</label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 bus-details-section">
+                            <div class="bus-details">
+                                <p class="bus-details-travel-name">Rainbow Travels</p>
+                                <p class="bus-details-city">Kathmandu To Pokhara</p>
+                                <p class="bus-details-date">On August 18th 2015</p>
+                            </div>
+                            <div class="seat-selector">
+                                <p class="seat-selector-selected-seats">Selected Seat(s): <span class="selected-seats"> A11, A12
+                                    A13, A14</span></p>
+                                <p class="seat-selector-amount">Total Amount: <span class="total-amount">Nrs 4000</span></p>
+                                <div class="seat-selector-pickup-points">
+                                    <p>Choose Pickup Point:</p>
+                                    <select name="" id="">
+                                        <option value="">--Pickup Points--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="book-seats">
+                                <a href="" class="btn-book">Book Seats</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="item-info2">
+                    <div class="row item-row">
+                        <div class="col-xs-3 ">
+                            <p>Cancellation  Policy</p>
+                        </div>
+
+                        <div class="col-xs-3 ">
+                            <p class="item-pickup">Pickup Points</p>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="item-review">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                <span>(15 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <div class="item-info1">
+                    <div class="row item-row">
+                        <div class="col-xs-3 item-section">
+                            <p class="item-name">Debit Travels</p>
+                            <p class="item-detail">Multi-Axle Tata, A/C, 4x4 Seater</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section">
+                            <p class="item-time .item-center"><span>11:00 AM</span><span class="glyphicon  glyphicon-arrow-right arrow-icon" aria-hidden="true"></span><span>4:00 PM</span></p>
+                            <p class="item-detail time-duration .item-center">(Duration:  4 Hrs)</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section ">
+                            <p class="item-seats .item-center">31 Seats</p>
+                            <p class="item-detail item-seat-available .item-center">(Available:  25 seats)</p>
+                        </div>
+
+                        <div class=" col-xs-3 item-section price-section">
+                            <p class="item-price">Nrs. 1200</p><a class="btn-seats" id="btn-seats-02" data-toggle="collapse" href="#travel-2" aria-expanded="true" aria-controls="travel-2">View Seats</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-view-seats collapse " id="travel-2">
+                    <div class="row item-row" id="Travel-02">
+                        <div class="col-xs-8 bus-structure ">
+                            <p>Click on seat to select/deselect seat</p>
+                            <div class="bus-outer-frame">
+
+
+                                <div class="deck">
+                                    <div style="position: absolute; top:20px; left: 35px;">
+                                        <p class="front">FRONT</p>
+                                        <p class="rear">BACK</p>
+                                        <img src="img/steering.png" alt=""/>
+                                    </div>
+
+
+                                    <!-- Row 1-->
+                                    <div style="position: absolute; top:10px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A1" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 174px; ">
+                                        <a href="" title="Seat: A7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 204px;">
+                                        <a href="" title="Seat: A9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 234px;">
+                                        <a href="" title="Seat: A11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 264px;">
+                                        <a href="" title="Seat: A13" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 294px;">
+                                        <a href="" title="Seat: A15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 324px;">
+                                        <a href="" title="Seat: A17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 354px;">
+                                        <a href="" title="Seat: A19" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 384px;">
+                                        <a href="" title="Seat: A21" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 414px;">
+                                        <a href="" title="Seat: A23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <!-- Row 2 -->
+
+                                    <div style="position: absolute; top:44px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A2" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A4" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 174px;">
+                                        <a href="" title=" Seat: A8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 204px;">
+                                        <a href="" title=" Seat: A10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 234px;">
+                                        <a href="" title="Seat: A12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 264px;">
+                                        <a href="" title="Seat: A14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 294px;">
+                                        <a href="" title="Seat: A16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 324px;">
+                                        <a href="" title="Seat: A18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 354px;">
+                                        <a href="" title="Seat: A20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 384px;">
+                                        <a href="" title="Seat: A22" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 414px;">
+                                        <a href="" title="Seat: A24" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <!-- Row 3-->
+
+                                    <div style="position: absolute; top:74px; left: 414px;">
+                                        <a href="" title="Seat: A25" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <!-- Row 4-->
+
+                                    <div style="position: absolute; top:104px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B2 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B4 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 144px;">
+                                        <a href="" title="Seat: B6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 174px;">
+                                        <a href="" title="Seat: B8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 204px;">
+                                        <a href="" title="Seat: B10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 234px;">
+                                        <a href="" title="Seat: B12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 264px;">
+                                        <a href="" title="Seat: B14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 294px;">
+                                        <a href="" title="Seat: B16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 324px;">
+                                        <a href="" title="Seat: B18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 354px;">
+                                        <a href="" title="Seat: B20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 384px;">
+                                        <a href="" title="Seat: B22" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 414px;">
+                                        <a href="" title="Seat: B24" data-toggle="tooltip"></a>
+                                    </div>
+
+
+
+                                    <!-- Row 5-->
+
+                                    <div style="position: absolute; top:134px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B1 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B3 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 144px;">
+                                        <a href="" title="Seat: B5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 174px;">
+                                        <a href="" title="Seat: B7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 204px;">
+                                        <a href="" title="Seat: B9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 234px;">
+                                        <a href="" title="Seat: B11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 264px;">
+                                        <a href="" title="Seat: B3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 294px;">
+                                        <a href="" title="Seat: B15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 324px;">
+                                        <a href="" title="Seat: B17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 354px;">
+                                        <a href="" class="booked" title="Seat: B19 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 384px;">
+                                        <a href="" class="booked" title="Seat: B21 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 414px;">
+                                        <a href="" title="Seat: B23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="legend">
+                                <label for=""><span class="seat booked"></span>Booked Seat</label>
+
+                                <label for=""><span class="seat selected"></span>Selected Seat</label>
+
+                                <label for=""><span class="seat reserved-ladies"></span>Reserved for Ladies </label>
+
+                                <label for=""><span class="seat available"></span>Available Seat</label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 bus-details-section">
+                            <div class="bus-details">
+                                <p class="bus-details-travel-name">Rainbow Travels</p>
+                                <p class="bus-details-city">Kathmandu To Pokhara</p>
+                                <p class="bus-details-date">On August 18th 2015</p>
+                            </div>
+                            <div class="seat-selector">
+                                <p class="seat-selector-selected-seats">Selected Seat(s): <span class="selected-seats"> A11, A12
+                                    A13, A14</span></p>
+                                <p class="seat-selector-amount">Total Amount: <span class="total-amount">Nrs 4000</span></p>
+                                <div class="seat-selector-pickup-points">
+                                    <p>Choose Pickup Point:</p>
+                                    <select name="" id="">
+                                        <option value="">--Pickup Points--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="book-seats">
+                                <a href="" class="btn-book">Book Seats</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="item-info2">
+                    <div class="row item-row">
+                        <div class="col-xs-3 ">
+                            <p>Cancellation  Policy</p>
+                        </div>
+
+                        <div class="col-xs-3 ">
+                            <p class="item-pickup">Pickup Points</p>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="item-review">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                <span>(15 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <div class="item-info1">
+                    <div class="row item-row">
+                        <div class="col-xs-3 item-section">
+                            <p class="item-name">Phewa View Tours & Travels</p>
+                            <p class="item-detail">Multi-Axle Tata, A/C, 4x4 Seater</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section">
+                            <p class="item-time .item-center"><span>11:00 AM</span><span class="glyphicon  glyphicon-arrow-right arrow-icon" aria-hidden="true"></span><span>4:00 PM</span></p>
+                            <p class="item-detail time-duration .item-center">(Duration:  4 Hrs)</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section ">
+                            <p class="item-seats .item-center">42 Seats</p>
+                            <p class="item-detail item-seat-available .item-center">(Available:  0 seats)</p>
+                        </div>
+
+                        <div class=" col-xs-3 item-section price-section">
+                            <p class="item-price">Nrs. 1000</p><a class="btn-seats seats-soldout" id="btn-seats-03" data-toggle="collapse" href="#travel-3" aria-expanded="true" aria-controls="travel-3">Sold Out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-view-seats collapse " id="travel-3">
+                    <div class="row item-row" id="Travel-03">
+                        <div class="col-xs-8 bus-structure ">
+                            <p>Click on seat to select/deselect seat</p>
+                            <div class="bus-outer-frame">
+
+
+                                <div class="deck">
+                                    <div style="position: absolute; top:20px; left: 35px;">
+                                        <p class="front">FRONT</p>
+                                        <p class="rear">BACK</p>
+                                        <img src="img/steering.png" alt=""/>
+                                    </div>
+
+
+                                    <!-- Row 1-->
+                                    <div style="position: absolute; top:10px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A1" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 174px; ">
+                                        <a href="" title="Seat: A7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 204px;">
+                                        <a href="" title="Seat: A9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 234px;">
+                                        <a href="" title="Seat: A11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 264px;">
+                                        <a href="" title="Seat: A13" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 294px;">
+                                        <a href="" title="Seat: A15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 324px;">
+                                        <a href="" title="Seat: A17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 354px;">
+                                        <a href="" title="Seat: A19" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 384px;">
+                                        <a href="" title="Seat: A21" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 414px;">
+                                        <a href="" title="Seat: A23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <!-- Row 2 -->
+
+                                    <div style="position: absolute; top:44px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A2" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A4" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 174px;">
+                                        <a href="" title=" Seat: A8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 204px;">
+                                        <a href="" title=" Seat: A10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 234px;">
+                                        <a href="" title="Seat: A12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 264px;">
+                                        <a href="" title="Seat: A14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 294px;">
+                                        <a href="" title="Seat: A16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 324px;">
+                                        <a href="" title="Seat: A18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 354px;">
+                                        <a href="" title="Seat: A20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 384px;">
+                                        <a href="" title="Seat: A22" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 414px;">
+                                        <a href="" title="Seat: A24" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <!-- Row 3-->
+
+                                    <div style="position: absolute; top:74px; left: 414px;">
+                                        <a href="" title="Seat: A25" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <!-- Row 4-->
+
+                                    <div style="position: absolute; top:104px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B2 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B4 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 144px;">
+                                        <a href="" title="Seat: B6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 174px;">
+                                        <a href="" title="Seat: B8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 204px;">
+                                        <a href="" title="Seat: B10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 234px;">
+                                        <a href="" title="Seat: B12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 264px;">
+                                        <a href="" title="Seat: B14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 294px;">
+                                        <a href="" title="Seat: B16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 324px;">
+                                        <a href="" title="Seat: B18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 354px;">
+                                        <a href="" title="Seat: B20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 384px;">
+                                        <a href="" title="Seat: B22" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 414px;">
+                                        <a href="" title="Seat: B24" data-toggle="tooltip"></a>
+                                    </div>
+
+
+
+                                    <!-- Row 5-->
+
+                                    <div style="position: absolute; top:134px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B1 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B3 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 144px;">
+                                        <a href="" title="Seat: B5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 174px;">
+                                        <a href="" title="Seat: B7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 204px;">
+                                        <a href="" title="Seat: B9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 234px;">
+                                        <a href="" title="Seat: B11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 264px;">
+                                        <a href="" title="Seat: B3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 294px;">
+                                        <a href="" title="Seat: B15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 324px;">
+                                        <a href="" title="Seat: B17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 354px;">
+                                        <a href="" class="booked" title="Seat: B19 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 384px;">
+                                        <a href="" class="booked" title="Seat: B21 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 414px;">
+                                        <a href="" title="Seat: B23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="legend">
+                                <label for=""><span class="seat booked"></span>Booked Seat</label>
+
+                                <label for=""><span class="seat selected"></span>Selected Seat</label>
+
+                                <label for=""><span class="seat reserved-ladies"></span>Reserved for Ladies </label>
+
+                                <label for=""><span class="seat available"></span>Available Seat</label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 bus-details-section">
+                            <div class="bus-details">
+                                <p class="bus-details-travel-name">Rainbow Travels</p>
+                                <p class="bus-details-city">Kathmandu To Pokhara</p>
+                                <p class="bus-details-date">On August 18th 2015</p>
+                            </div>
+                            <div class="seat-selector">
+                                <p class="seat-selector-selected-seats">Selected Seat(s): <span class="selected-seats"> A11, A12
+                                    A13, A14</span></p>
+                                <p class="seat-selector-amount">Total Amount: <span class="total-amount">Nrs 4000</span></p>
+                                <div class="seat-selector-pickup-points">
+                                    <p>Choose Pickup Point:</p>
+                                    <select name="" id="">
+                                        <option value="">--Pickup Points--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="book-seats">
+                                <a href="" class="btn-book">Book Seats</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="item-info2">
+                    <div class="row item-row">
+                        <div class="col-xs-3 ">
+                            <p>Cancellation  Policy</p>
+                        </div>
+
+                        <div class="col-xs-3 ">
+                            <p class="item-pickup">Pickup Points</p>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="item-review">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                <span>(15 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <div class="item-info1">
+                    <div class="row item-row">
+                        <div class="col-xs-3 item-section">
+                            <p class="item-name">Phewa View Tours & Travels</p>
+                            <p class="item-detail">Multi-Axle Tata, A/C, 4x4 Seater</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section">
+                            <p class="item-time .item-center"><span>11:00 AM</span><span class="glyphicon  glyphicon-arrow-right arrow-icon" aria-hidden="true"></span><span>4:00 PM</span></p>
+                            <p class="item-detail time-duration .item-center">(Duration:  4 Hrs)</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section ">
+                            <p class="item-seats .item-center">24 Seats</p>
+                            <p class="item-detail item-seat-available .item-center">(Available:  12 seats)</p>
+                        </div>
+
+                        <div class=" col-xs-3 item-section price-section">
+                            <p class="item-price">Nrs. 1000</p><a class="btn-seats" id="btn-seats-04" data-toggle="collapse" href="#travel-4" aria-expanded="true" aria-controls="travel-4">View Seats</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-view-seats collapse " id="travel-4">
+                    <div class="row item-row" id="Travel-04">
+                        <div class="col-xs-8 bus-structure ">
+                            <p>Click on seat to select/deselect seat</p>
+                            <div class="bus-outer-frame">
+
+
+                                <div class="deck">
+                                    <div style="position: absolute; top:20px; left: 35px;">
+                                        <p class="front">FRONT</p>
+                                        <p class="rear">BACK</p>
+                                        <img src="img/steering.png" alt=""/>
+                                    </div>
+
+
+                                    <!-- Row 1-->
+                                    <div style="position: absolute; top:10px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A1" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 174px; ">
+                                        <a href="" title="Seat: A7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 204px;">
+                                        <a href="" title="Seat: A9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 234px;">
+                                        <a href="" title="Seat: A11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 264px;">
+                                        <a href="" title="Seat: A13" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 294px;">
+                                        <a href="" title="Seat: A15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 324px;">
+                                        <a href="" title="Seat: A17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 354px;">
+                                        <a href="" title="Seat: A19" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 384px;">
+                                        <a href="" title="Seat: A21" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 414px;">
+                                        <a href="" title="Seat: A23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <!-- Row 2 -->
+
+                                    <div style="position: absolute; top:44px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A2" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A4" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 174px;">
+                                        <a href="" title=" Seat: A8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 204px;">
+                                        <a href="" title=" Seat: A10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 234px;">
+                                        <a href="" title="Seat: A12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 264px;">
+                                        <a href="" title="Seat: A14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 294px;">
+                                        <a href="" title="Seat: A16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 324px;">
+                                        <a href="" title="Seat: A18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 354px;">
+                                        <a href="" title="Seat: A20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 384px;">
+                                        <a href="" title="Seat: A22" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 414px;">
+                                        <a href="" title="Seat: A24" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <!-- Row 3-->
+
+                                    <div style="position: absolute; top:74px; left: 414px;">
+                                        <a href="" title="Seat: A25" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <!-- Row 4-->
+
+                                    <div style="position: absolute; top:104px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B2 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B4 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 144px;">
+                                        <a href="" title="Seat: B6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 174px;">
+                                        <a href="" title="Seat: B8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 204px;">
+                                        <a href="" title="Seat: B10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 234px;">
+                                        <a href="" title="Seat: B12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 264px;">
+                                        <a href="" title="Seat: B14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 294px;">
+                                        <a href="" title="Seat: B16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 324px;">
+                                        <a href="" title="Seat: B18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 354px;">
+                                        <a href="" title="Seat: B20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 384px;">
+                                        <a href="" title="Seat: B22" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 414px;">
+                                        <a href="" title="Seat: B24" data-toggle="tooltip"></a>
+                                    </div>
+
+
+
+                                    <!-- Row 5-->
+
+                                    <div style="position: absolute; top:134px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B1 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B3 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 144px;">
+                                        <a href="" title="Seat: B5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 174px;">
+                                        <a href="" title="Seat: B7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 204px;">
+                                        <a href="" title="Seat: B9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 234px;">
+                                        <a href="" title="Seat: B11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 264px;">
+                                        <a href="" title="Seat: B3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 294px;">
+                                        <a href="" title="Seat: B15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 324px;">
+                                        <a href="" title="Seat: B17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 354px;">
+                                        <a href="" class="booked" title="Seat: B19 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 384px;">
+                                        <a href="" class="booked" title="Seat: B21 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 414px;">
+                                        <a href="" title="Seat: B23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="legend">
+                                <label for=""><span class="seat booked"></span>Booked Seat</label>
+
+                                <label for=""><span class="seat selected"></span>Selected Seat</label>
+
+                                <label for=""><span class="seat reserved-ladies"></span>Reserved for Ladies </label>
+
+                                <label for=""><span class="seat available"></span>Available Seat</label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 bus-details-section">
+                            <div class="bus-details">
+                                <p class="bus-details-travel-name">Rainbow Travels</p>
+                                <p class="bus-details-city">Kathmandu To Pokhara</p>
+                                <p class="bus-details-date">On August 18th 2015</p>
+                            </div>
+                            <div class="seat-selector">
+                                <p class="seat-selector-selected-seats">Selected Seat(s): <span class="selected-seats"> A11, A12
+                                    A13, A14</span></p>
+                                <p class="seat-selector-amount">Total Amount: <span class="total-amount">Nrs 4000</span></p>
+                                <div class="seat-selector-pickup-points">
+                                    <p>Choose Pickup Point:</p>
+                                    <select name="" id="">
+                                        <option value="">--Pickup Points--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="book-seats">
+                                <a href="" class="btn-book">Book Seats</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="item-info2">
+                    <div class="row item-row">
+                        <div class="col-xs-3 ">
+                            <p>Cancellation  Policy</p>
+                        </div>
+
+                        <div class="col-xs-3 ">
+                            <p class="item-pickup">Pickup Points</p>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="item-review">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                <span>(15 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="item">
+
+                <div class="item-info1">
+                    <div class="row item-row">
+                        <div class="col-xs-3 item-section">
+                            <p class="item-name">Green World Tours & Travels</p>
+                            <p class="item-detail">Multi-Axle Tata, A/C, 4x4 Seater</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section">
+                            <p class="item-time .item-center"><span>07:00 AM</span><span class="glyphicon  glyphicon-arrow-right arrow-icon" aria-hidden="true"></span><span>2:00 PM</span></p>
+                            <p class="item-detail time-duration .item-center">(Duration:  5 Hrs)</p>
+                        </div>
+
+                        <div class="col-xs-3 item-section ">
+                            <p class="item-seats .item-center">42 Seats</p>
+                            <p class="item-detail item-seat-available .item-center">(Available:  30 seats)</p>
+                        </div>
+
+                        <div class=" col-xs-3 item-section price-section">
+                            <p class="item-price">Nrs. 1000</p><a class="btn-seats" id="btn-seats-05" data-toggle="collapse" href="#travel-5" aria-expanded="true" aria-controls="travel-5">View Seats</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-view-seats collapse " id="travel-5">
+                    <div class="row item-row" id="Travel-05">
+                        <div class="col-xs-8 bus-structure ">
+                            <p>Click on seat to select/deselect seat</p>
+                            <div class="bus-outer-frame">
+
+
+                                <div class="deck">
+                                    <div style="position: absolute; top:20px; left: 35px;">
+                                        <p class="front">FRONT</p>
+                                        <p class="rear">BACK</p>
+                                        <img src="img/steering.png" alt=""/>
+                                    </div>
+
+
+                                    <!-- Row 1-->
+                                    <div style="position: absolute; top:10px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A1" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 174px; ">
+                                        <a href="" title="Seat: A7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 204px;">
+                                        <a href="" title="Seat: A9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 234px;">
+                                        <a href="" title="Seat: A11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 264px;">
+                                        <a href="" title="Seat: A13" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 294px;">
+                                        <a href="" title="Seat: A15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 324px;">
+                                        <a href="" title="Seat: A17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 354px;">
+                                        <a href="" title="Seat: A19" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 384px;">
+                                        <a href="" title="Seat: A21" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:10px; left: 414px;">
+                                        <a href="" title="Seat: A23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <!-- Row 2 -->
+
+                                    <div style="position: absolute; top:44px; left: 84px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A2" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 114px;">
+                                        <a href="" class="reserved-ladies" title="Seat: A4" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 144px;">
+                                        <a href="" class="reserved-ladies" title=" Seat: A6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 174px;">
+                                        <a href="" title=" Seat: A8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 204px;">
+                                        <a href="" title=" Seat: A10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 234px;">
+                                        <a href="" title="Seat: A12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 264px;">
+                                        <a href="" title="Seat: A14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 294px;">
+                                        <a href="" title="Seat: A16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 324px;">
+                                        <a href="" title="Seat: A18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 354px;">
+                                        <a href="" title="Seat: A20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 384px;">
+                                        <a href="" title="Seat: A22" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:44px; left: 414px;">
+                                        <a href="" title="Seat: A24" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <!-- Row 3-->
+
+                                    <div style="position: absolute; top:74px; left: 414px;">
+                                        <a href="" title="Seat: A25" data-toggle="tooltip" ></a>
+                                    </div>
+
+                                    <!-- Row 4-->
+
+                                    <div style="position: absolute; top:104px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B2 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B4 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 144px;">
+                                        <a href="" title="Seat: B6" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 174px;">
+                                        <a href="" title="Seat: B8" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 204px;">
+                                        <a href="" title="Seat: B10" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 234px;">
+                                        <a href="" title="Seat: B12" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 264px;">
+                                        <a href="" title="Seat: B14" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 294px;">
+                                        <a href="" title="Seat: B16" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 324px;">
+                                        <a href="" title="Seat: B18" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 354px;">
+                                        <a href="" title="Seat: B20" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 384px;">
+                                        <a href="" title="Seat: B22" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:104px; left: 414px;">
+                                        <a href="" title="Seat: B24" data-toggle="tooltip"></a>
+                                    </div>
+
+
+
+                                    <!-- Row 5-->
+
+                                    <div style="position: absolute; top:134px; left: 84px;">
+                                        <a href="" class="booked" title="Seat: B1 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 114px;">
+                                        <a href="" class="booked" title="Seat: B3 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 144px;">
+                                        <a href="" title="Seat: B5" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 174px;">
+                                        <a href="" title="Seat: B7" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 204px;">
+                                        <a href="" title="Seat: B9" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 234px;">
+                                        <a href="" title="Seat: B11" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 264px;">
+                                        <a href="" title="Seat: B3" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 294px;">
+                                        <a href="" title="Seat: B15" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 324px;">
+                                        <a href="" title="Seat: B17" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 354px;">
+                                        <a href="" class="booked" title="Seat: B19 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 384px;">
+                                        <a href="" class="booked" title="Seat: B21 Booked" data-toggle="tooltip"></a>
+                                    </div>
+
+                                    <div style="position: absolute; top:134px; left: 414px;">
+                                        <a href="" title="Seat: B23" data-toggle="tooltip"></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="legend">
+                                <label for=""><span class="seat booked"></span>Booked Seat</label>
+
+                                <label for=""><span class="seat selected"></span>Selected Seat</label>
+
+                                <label for=""><span class="seat reserved-ladies"></span>Reserved for Ladies </label>
+
+                                <label for=""><span class="seat available"></span>Available Seat</label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 bus-details-section">
+                            <div class="bus-details">
+                                <p class="bus-details-travel-name">Rainbow Travels</p>
+                                <p class="bus-details-city">Kathmandu To Pokhara</p>
+                                <p class="bus-details-date">On August 18th 2015</p>
+                            </div>
+                            <div class="seat-selector">
+                                <p class="seat-selector-selected-seats">Selected Seat(s): <span class="selected-seats"> A11, A12
+                                    A13, A14</span></p>
+                                <p class="seat-selector-amount">Total Amount: <span class="total-amount">Nrs 4000</span></p>
+                                <div class="seat-selector-pickup-points">
+                                    <p>Choose Pickup Point:</p>
+                                    <select name="" id="">
+                                        <option value="">--Pickup Points--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="book-seats">
+                                <a href="" class="btn-book">Book Seats</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="item-info2">
+                    <div class="row item-row">
+                        <div class="col-xs-3 ">
+                            <p>Cancellation  Policy</p>
+                        </div>
+
+                        <div class="col-xs-3 ">
+                            <p class="item-pickup">Pickup Points</p>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <div class="item-review">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                <span>(15 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+<div class="footer-container">
+    <div class="container">
+        <footer class="footer">
+            <div class="row">
+                <div class="col-xs-3 footer-widget">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="">Bus Booking</a></li>
+                        <li><a href="">Cancel Bus Ticket</a></li>
+                        <li><a href="">Refund Status</a></li>
+                        <li><a href="">Print/Sms Ticket</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-3 footer-widget">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-3  footer-widget">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="">Cancellation</a></li>
+                        <li><a href="">Refund</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-xs-3 footer-widget">
+                    <h4>Find Us On</h4>
+                    <ul>
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">twitter</a></li>
+
+                    </ul>
+                </div>
+            </div><!-- end-row -->
+
+            <div class="popular-route footer-widget">
+                <div class="row">
+                    <div class="col-xs-9">
+                        <h4>Popular Routes</h4>
+                        <p><a href="">Kathmandu - Pokhara</a>	| <a href="">Kathmandu - Chitwan</a>  | <a
+                                href="">Kathmanudu - Lumbini</a> | <a href="">Pokhara - Palpa</a> |
+                            <a href="">Pokhara - Chitwan </a>| <a href="">Kahtmandu - Biratnagar </a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div> <!-- /container -->
+    <div class="copyright-info">
+        <div class="container">
+            <p>&copy; gobus All Rights Reserved</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/transition.js"></script>
+<script>
+    $(document).ready(function() {
+
+            $("[id^=Travel-]").each(function() {
+                $(this).hide();
+            });
+
+
+        $( "[id^=btn-seats-]" ).click(function() {
+            $(this).html($(this).text() == "View Seats" ? "Hide Seats" : "View Seats");
+
+            $(this).toggleClass("btn-seats-visited btn-seats");
+            var id  = $(this).attr("id");
+            var idLen = id.length;
+
+            var Id = id.substr(10, idLen);
+            var travelID = "#Travel-"+Id;
+
+            $(travelID).fadeToggle( "slow", "linear" );
+        });
+        $('[data-toggle="tooltip"]').tooltip()
+
+        $('.deck a').on('click', function(e) {
+
+            var className = $(this).attr("class");
+
+            if (className != 'booked') {
+                $(this).toggleClass("selected"); //you can list several class names
+
+            }
+
+
+/*
+            if (className == 'reserved-ladies') {
+                $(this).toggleClass("selected");
+
+
+            }*/
+
+
+            e.preventDefault();
+        });
+
+        $('.deck a').mouseleave(function(){
+            $(this).tooltip('hide');
+        });
+
+    });
+</script>
+
+</body>
+</html>
